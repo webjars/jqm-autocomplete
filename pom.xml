@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jqm-autocomplete</artifactId>
-    <version>1.5.2-SNAPSHOT</version>
+    <version>1.5.2</version>
     <name>Jquery Mobile Autocomplete</name>
     <description>WebJar for Jquery Mobile Autocomplete</description>
     <url>http://webjars.org</url>
@@ -58,7 +58,7 @@
         <url>http://github.com/webjars/jqm-autocomplete</url>
         <connection>scm:git:https://github.com/webjars/jqm-autocomplete.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jqm-autocomplete.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jqm-autocomplete-1.5.2</tag>
     </scm>
     
     <dependencies>
@@ -81,9 +81,9 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}.js" dest="${destDir}/jqm.autoComplete.js"/>
-                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}-min.js" dest="${destDir}/jqm.autoComplete.min.js"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}.js" dest="${destDir}/jqm.autoComplete.js" />
+                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}-min.js" dest="${destDir}/jqm.autoComplete.min.js" />
                             </target>
                         </configuration>
                     </execution>
