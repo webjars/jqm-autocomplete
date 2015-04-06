@@ -24,10 +24,10 @@
         <requirejs>
             {
                 "paths": {
-                    "WEBJAR_ID": "MAIN_JS"
+                    "jqm-autocomplete": "jqm.autoComplete"
                 },
                 "shim": {
-                    "WEBJAR_ID": ["DEP_ID"]
+                    "jqm-autocomplete": ["jquery-mobile"]
                 }
             }
         </requirejs>
@@ -82,8 +82,8 @@
                         <configuration>
                             <target>
                                 <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}-min.js" dest="${destDir}"/>
+                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}.js" dest="${destDir}/jqm.autoComplete.js"/>
+                                <get src="${upstream.url}/jqm.autoComplete-${upstream.version}-min.js" dest="${destDir}/jqm.autoComplete.min.js"/>
                             </target>
                         </configuration>
                     </execution>
